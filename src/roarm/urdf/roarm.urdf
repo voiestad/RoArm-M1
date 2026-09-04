@@ -192,12 +192,12 @@
   </joint>
 
   <joint name="L5_1_A_to_L5_3_A" type="revolute">
-    <axis xyz="0 0 1"/>
+    <axis xyz="0 0 -1"/>
     <limit effort="1000.0" lower="-1.57" upper="0" velocity="0.5"/>
     <parent link="l5_1_A_link"/>
     <child link="l5_3_A_link"/>
     <origin xyz="-0.0432 0 -0.008" rpy="0 0 0"/>
-    <mimic joint="L4_to_L5_1_A" multiplier="-1" offset="0"/>
+    <mimic joint="L4_to_L5_1_A" multiplier="1" offset="0"/>
   </joint>
   
   <joint name="L5_1_B_to_L5_3_B" type="revolute">
